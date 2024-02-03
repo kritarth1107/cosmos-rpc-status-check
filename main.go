@@ -75,8 +75,9 @@ func main() {
 
 	db := initDB()
 	defer db.Close()
+	
 	checkRPCConnections(db)
-	ticker := time.NewTicker(30 * time.Second)
+	ticker := time.NewTicker(3600 * time.Second)
 	defer ticker.Stop()
 
 	for {
