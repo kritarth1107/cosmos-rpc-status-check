@@ -1,1 +1,1 @@
-sudo journlctl -u cosmos-rpc-status-check.service -f
+sudo journalctl -u cosmos-rpc-status-check.service -f
