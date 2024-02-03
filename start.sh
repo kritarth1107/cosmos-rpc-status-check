@@ -1,0 +1,1 @@
+sudo systemctl start cosmos-rpc-status-check.service

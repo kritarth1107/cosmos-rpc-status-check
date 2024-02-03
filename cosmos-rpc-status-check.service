@@ -1,0 +1,14 @@
+[Unit]
+Description=Cosmos RPC Status Check Service
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/super-bot/
+ExecStart=/usr/local/go/bin/go run /home/ubuntu/cosmos-rpc-status-check/main.go
+Restart=on-failure
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
